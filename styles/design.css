@@ -7,6 +7,7 @@
 
     /*	color primary */
     --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-cyan: #194031;
     --cream: hsl(30, 38%, 92%);
 }
 
@@ -108,6 +109,12 @@ button.submit {
 
 }
 
+button.submit:hover {
+    background-color: var(--very-dark-cyan);
+    cursor: pointer;
+
+}
+
 img.cart {
     padding-right: 10px;
 
@@ -115,12 +122,13 @@ img.cart {
 
 @media (max-width: 448px) {
     /*    ce code css s'exécute quand la taille de l'écran égale à 448px*/
-   body{
-       padding-top: 60px;
-   }
+    body {
+        padding-top: 60px;
+    }
 
     section.contenu {
         flex-direction: column-reverse;
+        width: 80vw;
     }
 
     img.chanel {
@@ -131,4 +139,13 @@ img.cart {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+    div.informations{
+        width: initial;
+    }
+    button.submit{
+        padding: 11px;
+        width: 100%;
+        justify-content: center;
+    }
+
 }
