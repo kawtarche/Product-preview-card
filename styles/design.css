@@ -61,8 +61,6 @@ div.prices {
 }
 
 
-
-
 img.chanel {
     width: 350px;
     border-bottom-left-radius: 10px;
@@ -79,14 +77,14 @@ p.price-promotion {
     font-family: 'Fraunces', serif;
 
 
-
 }
-p.reel-price{
+
+p.reel-price {
     text-decoration: line-through;
     color: var(--dark-grayish-blue);
 }
 
-p.description{
+p.description {
     color: var(--dark-grayish-blue);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5px;
@@ -95,7 +93,6 @@ p.description{
     margin-bottom: 0px;
 
 }
-
 
 
 button.submit {
@@ -110,7 +107,28 @@ button.submit {
     align-items: center;
 
 }
-img.cart{
+
+img.cart {
     padding-right: 10px;
 
+}
+
+@media (max-width: 448px) {
+    /*    ce code css s'exécute quand la taille de l'écran égale à 448px*/
+   body{
+       padding-top: 60px;
+   }
+
+    section.contenu {
+        flex-direction: column-reverse;
+    }
+
+    img.chanel {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 }
